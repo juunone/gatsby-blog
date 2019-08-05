@@ -61,6 +61,7 @@ const Bio = () => {
           You should follow him on Twitter
         </a>
       </p>
+      <p>준원이 블로그</p>
     </div>
   )
 }
