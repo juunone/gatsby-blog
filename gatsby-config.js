@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Juunone's Dev blog`,
     author: `Juunone`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `It's my awesome DEV blog`,
+    siteUrl: `https://juunone.netlify.com/`,
     social: {
       twitter: `Juunwon`,
     },
@@ -50,14 +50,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-131472455-1`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `Gatsby Dev Blog`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,

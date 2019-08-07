@@ -54,14 +54,11 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
-        {` `}
+        I'm not a Developer, I'm a Meditator <span role="img" aria-label="diamond">💎</span><br />Make web comfortable <span role="img" aria-label="rocket">🚀</span><br />
         <a href={`https://twitter.com/${social.twitter}`}>
           You should follow him on Twitter
         </a>
       </p>
-      <p>준원이 블로그</p>
     </div>
   )
 }
