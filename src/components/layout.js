@@ -1,11 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { location, title, children, social } = this.props
+    console.log('this.props', this.props)
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
@@ -63,12 +66,22 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-          <Link style={{ boxShadow: `none` }} to='/about'>
-            About
-          </Link>
+          <p>
+            <a href={`https://github.com/${social.github}`} title="Github" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </p>
+          <p>
+            <Link style={{ boxShadow: `none` }} to='/about'>
+              About
+            </Link>
+          </p>
+          <p>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a><br/>
+            Was made with &#x1F49A; by 최 준원
+          </p>
         </footer>
       </div>
     )

@@ -5,7 +5,8 @@ module.exports = {
     description: `It's my awesome DEV blog`,
     siteUrl: `https://juunone.netlify.com/`,
     social: {
-      twitter: `Juunwon`,
+      twitter: `juunwon`,
+      github:'juunone'
     },
   },
   plugins: [

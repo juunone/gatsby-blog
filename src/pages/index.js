@@ -9,12 +9,15 @@ import { rhythm } from "../utils/typography"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
+    console.log(this.props);
     const siteTitle = data.site.siteMetadata.title
+    const social = data.site.siteMetadata.social
     const posts = data.allMarkdownRemark.edges
 
+    console.log(this.props);
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+      <Layout location={this.props.location} title={siteTitle} social={social}>
+        <SEO title="All posts"/>
         <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
@@ -50,6 +53,10 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        social {
+          twitter
+          github
+        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
