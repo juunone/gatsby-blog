@@ -6,10 +6,22 @@ module.exports = {
     siteUrl: `https://juunone.netlify.com/`,
     social: {
       twitter: `juunwon`,
-      github:'juunone'
+      github:'juunone',
+      linkedin:'juunone'
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Nanum Gothic`,
+            subsets: [`latin`,`korean`],
+          }
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

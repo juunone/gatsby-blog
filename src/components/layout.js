@@ -1,15 +1,15 @@
-import React from "react"
-import { Link } from "gatsby"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-
-import { rhythm, scale } from "../utils/typography"
+import React from "react";
+import { Link } from "gatsby";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import { rhythm, scale } from "../utils/typography";
+import { Paragraph, SocialLink, Wrapper } from './styled'
 
 class Layout extends React.Component {
   render() {
     const { location, title, children, social } = this.props
-    console.log('this.props', this.props)
     const rootPath = `${__PATH_PREFIX__}/`
+
     let header
 
     if (location.pathname === rootPath) {
@@ -55,35 +55,34 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <Wrapper>
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          <p>
-            <a href={`https://github.com/${social.github}`} title="Github" target="_blank" rel="noopener noreferrer">
+          <Paragraph>
+            <SocialLink as="a" href={`https://github.com/${social.github}`} title="Github" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </p>
-          <p>
+            </SocialLink>
+            <SocialLink as="a" href={`https://www.linkedin.com/in/${social.linkedin}`} title="Linkedin" tSocialLinkrget="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </SocialLink>
+            <SocialLink as="a" href={`https://twitter.com/${social.twitter}`} title="Twitter" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faTwitterSquare} />
+            </SocialLink>
+          </Paragraph>
+          <Paragraph>
             <Link style={{ boxShadow: `none` }} to='/about'>
               About
             </Link>
-          </p>
-          <p>
+          </Paragraph>
+          <Paragraph>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a><br/>
             Was made with &#x1F49A; by 최 준원
-          </p>
+          </Paragraph>
         </footer>
-      </div>
+      </Wrapper>
     )
   }
 }
