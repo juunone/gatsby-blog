@@ -5,6 +5,7 @@ import { faGithub, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-
 import { rhythm, scale } from "../utils/typography";
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { Paragraph, SocialLink, Wrapper } from './styled'
+import AdSense from 'react-adsense';
 
 class Layout extends React.Component {
   render() {
@@ -78,6 +79,14 @@ class Layout extends React.Component {
       <ThemeProvider theme={theme}>
         <Wrapper>
           <GlobalStyle />
+          <AdSense.Google
+            client='ca-pub-7767674261514377'
+            slot='7806394673'
+            style={{ display: 'block' }}
+            format='auto'
+            responsive='true'
+            layoutKey='-gw-1+2a-9x+5c'
+          />
           <header>{header}</header>
           <main>{children}</main>
           <footer>

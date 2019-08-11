@@ -33,6 +33,7 @@
     "gatsby-transformer-sharp": "^2.2.5",
     "prismjs": "^1.17.1",
     "react": "^16.8.6",
+    "react-adsense": "^0.1.0",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
