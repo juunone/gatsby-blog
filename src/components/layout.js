@@ -81,7 +81,7 @@ class Layout extends React.Component {
           <GlobalStyle />
           <AdSense.Google
             client='ca-pub-7767674261514377'
-            slot='7806394673'
+            slot='4548388677'
             style={{ display: 'block' }}
             format='auto'
             responsive='true'
