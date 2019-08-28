@@ -16,9 +16,9 @@ date: 2019-02-06 10:00:00
 크롬과 사파리는 "Webkit 엔진"을 사용하고, 파이어폭스는 "Gecko 엔진"을 사용한다.
 
 **브라우저 렌더링 과정**<br />
-![브라우저렌더링](http://www.phpied.com/files/reflow/render.png)
+![브라우저렌더링](https://www.phpied.com/files/reflow/render.png)
 
-출처 : [http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/](http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/)
+출처 : [http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/](https://www.phpied.com/rendering-repaint-reflowrelayout-restyle/)
 
 1. 불러오기(Load)<br />
    로더(Loader)가 서버로부터 전달 받는 리소스 스트림을 읽는 과정.
