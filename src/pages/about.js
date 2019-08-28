@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Wrapper, Header1, Ul } from '../components/styled';
+import { Header1 } from '../components/styled';
 
 const about = (props) =>{
   const { data } = props;
