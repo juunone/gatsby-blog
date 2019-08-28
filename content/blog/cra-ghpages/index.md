@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "React application SPA with gh-pages deploy(1)"
+description: CRA로 만든 SPA 환경의 어플리케이션을 gh-pages로 deploy 하기.
 date: 2019-01-12 21:00:00
 ---
 

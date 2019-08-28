@@ -94,7 +94,7 @@ class Layout extends React.Component {
               <SocialLink as="a" href={`https://github.com/${social.github}`} title="Github" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} />
               </SocialLink>
-              <SocialLink as="a" href={`https://www.linkedin.com/in/${social.linkedin}`} title="Linkedin" tSocialLinkrget="_blank" rel="noopener noreferrer">
+              <SocialLink as="a" href={`https://www.linkedin.com/in/${social.linkedin}`} title="Linkedin" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} />
               </SocialLink>
               <SocialLink as="a" href={`https://twitter.com/${social.twitter}`} title="Twitter" target="_blank" rel="noopener noreferrer">

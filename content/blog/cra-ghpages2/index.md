@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "React application SPA with gh-pages deploy(2)"
 date: 2019-01-13 21:00:00
 ---
