@@ -8,7 +8,7 @@
     "url": "https://github.com/juunone/gatsby-blog/issues"
   },
   "engines": {
-    "node": ">=10.16.3"
+    "node": ">=10.16.0"
   },
   "os": [
     "!win32"
