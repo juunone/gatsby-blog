@@ -1,3 +1,13 @@
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/juunone/react-socket-chat" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://app.netlify.com/sites/juunone/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/091903c7-e3d2-4286-9dab-6c53745fbf6a/deploy-status" />
+  </a>
+</p>
+
 # 최 준원 (Juunone)
 
 <b>&#x1F4E7;</b> juunone@gmail.com <br />
