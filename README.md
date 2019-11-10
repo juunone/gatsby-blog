@@ -3,6 +3,9 @@
   <a href="https://github.com/juunone/react-socket-chat" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
+  <a href="https://github.com/juunone/react-socket-chat/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
   <a href="https://app.netlify.com/sites/juunone/deploys">
     <img src="https://api.netlify.com/api/v1/badges/091903c7-e3d2-4286-9dab-6c53745fbf6a/deploy-status" />
   </a>
